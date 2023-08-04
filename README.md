@@ -1,10 +1,12 @@
-- 👋 Hi, I’m BM
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-<!---
-B12345671234246m/B12345671234246m is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+public class SettingsActivity extends PreferenceActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Load the preferences from the XML resource
+        addPreferencesFromResource(R.xml.preferences);
+    }
